@@ -1,0 +1,10 @@
+# Compose and Dockerfile adapted from https://www.cloudbees.com/blog/using-docker-compose-for-python-development
+version: '3'
+services:
+  dev:
+    build: .
+    volumes:
+      - .:/usr/src/app
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    entrypoint: /bin/sh
