@@ -1,3 +1,4 @@
 scrapy.cfg
 nopcommerce/settings.py
 __pycache__/
+data/
